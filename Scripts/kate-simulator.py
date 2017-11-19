@@ -7,7 +7,7 @@ bot = telebot.TeleBot(token)
 
 @bot.message_handler(content_types=["text"])
 def answer_all_messages(message): 
-	if message.text.find('привет')>=0: 
+	if (message.text.lower.find('привет')>=0) or (message.text.lower.find('здаров')>=0): 
 		bot.send_message(message.chat.id, 'И тебе привет')
 
 if __name__ == '__main__':
