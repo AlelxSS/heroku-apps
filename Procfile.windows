@@ -1,1 +1,1 @@
-web: python kate-simulator.py
+web: python Scripts/kate-simulator.py
