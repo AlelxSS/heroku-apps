@@ -1,1 +1,1 @@
-bot: python Scripts/kate-simulator.py
+worker: python Scripts/kate-simulator.py
