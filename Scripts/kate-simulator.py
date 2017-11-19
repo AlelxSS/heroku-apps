@@ -10,7 +10,9 @@ def cmd_start(message):
 
 @bot.message_handler(content_types=["text"])
 def answer_all_messages(message): 
-	if(message.text.lower.find('привет')): bot.send_message(message.chat.id, 'И тебе привет')
+	if(message.text.lower.find('привет')): 
+	bot.send_message(message.chat.id, 'И тебе привет')
+	return
 
 if __name__ == '__main__':
     bot.polling(none_stop=True)
