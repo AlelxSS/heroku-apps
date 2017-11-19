@@ -10,7 +10,7 @@ def cmd_start(message):
 
 @bot.message_handler(content_types=["text"])
 def answer_all_messages(message): 
-	if(message.text.lower.find('привет')): 
+	if message.text.find('привет'): 
 	bot.send_message(message.chat.id, 'И тебе привет')
 	return
 
