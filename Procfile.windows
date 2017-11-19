@@ -1,1 +1,1 @@
-worker: sh Scripts/kate-simulator
+web: python Scripts/kate-simulator.py
