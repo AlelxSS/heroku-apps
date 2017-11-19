@@ -44,9 +44,12 @@ def answer_all_messages(message):
 	elif (message.text.lower().find('чей')>=0): 
 		foo12 = ['Общий']
 		bot.send_message(message.chat.id, random.choice(foo12))
-	else:
-		foo13 = ['Ой все', 'Отстань', 'Ай', '...']
+	elif (message.text.lower().find('где')>=0): 
+		foo13 = ['Где-то', 'В караганде', 'Аййй..']
 		bot.send_message(message.chat.id, random.choice(foo13))
+	else:
+		foo14 = ['Ой все', 'Отстань', 'Ай', '...']
+		bot.send_message(message.chat.id, random.choice(foo14))
 	
 	
 
